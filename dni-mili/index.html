@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles-login.css">
+</head>
+<body class="body-login" >
+    <header class="container-fluid header-login">
+        <div class="row">
+        <!-- logo y boton mi cuenta -->
+          <div class="navbar navbar-top navbar-default nav-header-dashboard di1" role="navigation" aria-labelledby="Mi cuenta">
+            <div>
+              <div class="nav navbar-nav navbar-header di3">
+                <a href="https://mi.argentina.gob.ar">
+                  <img alt="Mi Argentina" title="Mi Argentina" id="ma" src="https://id.argentina.gob.ar/static/img/miargentina.svg" class="brand-icon" height="40">
+                  <h1 class="sr-only">Mi Argentina</h1>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main role="main" class="container-fluid">
+
+        <div class="row dashboard">
+          <div class="col-lg-offset-4 col-lg-4 col-sm-offset-2 col-sm-8 col-xs-12 di4">
+            <div class="panel panel-default di5">
+              <div class="panel-body di6">
+                <h1 class="sr-only">
+                  Ingresá o creá tu cuenta de Mi Argentina
+                </h1>
+                <h2 aria-hidden="true" class="ingr">Ingresá a tu cuenta</h2>
+                
+        
+                <form method="post" class="form" data-gtm-form-interact-id="0">
+                  <input type="hidden" class="in1" name="csrfmiddlewaretoken" value="EG3PXQatnaiwbABbmjOUWxogjxRjkAWc8fuRNCTpLKol9MQlGBtKbPpcaBZ4CAsH">
+        
+                  
+                  
+                  
+                  <input type="hidden" name="next" value="/authorize/?client_id=613410&amp;response_type=code&amp;scope=openid+profile+email+optional&amp;redirect_uri=https://mi.argentina.gob.ar/_oauth/oidc&amp;state=eyJsb2dpblN0eWxlIjoicmVkaXJlY3QiLCJjcmVkZW50aWFsVG9rZW4iOiJncjV5c1RCeXpuaFpudjJzdyIsImlzQ29yZG92YSI6ZmFsc2UsInJlZGlyZWN0VXJsIjoiaHR0cHM6Ly9taS5hcmdlbnRpbmEuZ29iLmFyL2JpbGxldGVyYSJ9">
+                  
+        
+                  
+        
+                  <label class="cuil" for="cuil">CUIL o pasaporte extranjero</label>
+                  <div class="row">
+                    <div class="col-xs-12 form-group item-form">
+                    <input type="text" class="form-control" id="cuil" aria-required="true" name="id_number" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAA11JREFUWAndVzlLY1EU/pKJioiiiYoxgoIguMQoUyg2CTbBTrCcUvAHWFgJNlbzM6wGQQQLO3VEEEtTuRSKiMaFxA0R18z57uRd5r3szxeEOZDce8/63XOX864LQvPz84G3t7ef0o2kUqlW8pwil8t1Lr5+ezyemdnZ2TOrX1c6eEwC+6xCJ8cCJCEgQlYQbs683ME5EcZIZ9k0L7eMIiZOeQcZsdxOr3k+/NliMQNfSv83gO7ubkxPT4NtLiprBnp7e1FXVwe2uaisAOTsq7hGmw1EWQFkC2jlmQBUVVWhs7MTDQ0NVj3YlWU4sjA8xri+vh6Tk5Oora3Fx8cHVlZWsLu7q8R2ZYbvfK3OwPDwsApOZbfbjdHRUW1nV6Yd5OloAHl0yirSAHZ2dvDw8KCCcQnW19d1YLsy7SBPxzU3N5cy5NxobW1tSCaTuLm5MdiqzSczKRYYyJGMi8pm+vvg1ASggK2jYgGSFBADegkc9V6EM6mMXn4ffBmANMawvgeKAJ2hEgwGMTIyAp/Ph7u7O+zv72NjY0PdIxnKWRiSBb9tAAw+MTGh3TY1NYE/gllcXNR8dhobG1FZWYnLy0u8v7+bZLaXgDMnvb6+Ynl5GUdHR2rc09OD1lbzh/X4+DimpqZQU1OjdP79sw2AMyXF43HEYjFsbW1pv+3t7bpfqOOR43Ce7VutkOHT05NKK9POgH19fdqEtaOjowOhUEjxjOIWjUbx8vKC6+trbG9vK9m3SCTyXXpBbV1kx+v1IhAIoKKiAoODg2hpaeGnN1j7j4+PVT0Jh8Pw+/0KKN02NzerMXWYNZLcBZ4ZOY9RMf6bU8Uu/Le2tobq6mp0dXWpXc/rWiajDG9vb3F4eIiFhQU1HhsbUxt0aWkJj4+PYPYM8vClIq+jUPrRUPTT7Pn5GXRIYvVkEM6MdHFxoeqKUVuoSzo5OcH9/b3qG3/qGKafSz8MZr7WqB1M/9DQEFOodj3XnXRwcICzM/MTMJFIKD0WOSvZvgd4pPr7+03+9vb2sLq6auJxwGOai2wD4Kx49HixsHJeXV2pI5krUC7+pwBwI36WSr6IZKOxnjtC9FUyAIm86Uj0v042SwbAe0OQJz8Lgj7oq2QAcmRPxXBAHPxiCksFQhva0gd9/QFliFiu8Gk7TgAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" value="" data-gtm-form-interact-field-id="0">
+                    
+                    </div>
+                  </div>
+        
+                  <label class="contrasena" for="password_confirmacion">Contraseña</label>
+                  <div class="row">
+                    <div class="col-xs-12 form-group item-form">
+                    <input id="password_confirmacion" type="password" class="form-control" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAA11JREFUWAndVzlLY1EU/pKJioiiiYoxgoIguMQoUyg2CTbBTrCcUvAHWFgJNlbzM6wGQQQLO3VEEEtTuRSKiMaFxA0R18z57uRd5r3szxeEOZDce8/63XOX864LQvPz84G3t7ef0o2kUqlW8pwil8t1Lr5+ezyemdnZ2TOrX1c6eEwC+6xCJ8cCJCEgQlYQbs683ME5EcZIZ9k0L7eMIiZOeQcZsdxOr3k+/NliMQNfSv83gO7ubkxPT4NtLiprBnp7e1FXVwe2uaisAOTsq7hGmw1EWQFkC2jlmQBUVVWhs7MTDQ0NVj3YlWU4sjA8xri+vh6Tk5Oora3Fx8cHVlZWsLu7q8R2ZYbvfK3OwPDwsApOZbfbjdHRUW1nV6Yd5OloAHl0yirSAHZ2dvDw8KCCcQnW19d1YLsy7SBPxzU3N5cy5NxobW1tSCaTuLm5MdiqzSczKRYYyJGMi8pm+vvg1ASggK2jYgGSFBADegkc9V6EM6mMXn4ffBmANMawvgeKAJ2hEgwGMTIyAp/Ph7u7O+zv72NjY0PdIxnKWRiSBb9tAAw+MTGh3TY1NYE/gllcXNR8dhobG1FZWYnLy0u8v7+bZLaXgDMnvb6+Ynl5GUdHR2rc09OD1lbzh/X4+DimpqZQU1OjdP79sw2AMyXF43HEYjFsbW1pv+3t7bpfqOOR43Ce7VutkOHT05NKK9POgH19fdqEtaOjowOhUEjxjOIWjUbx8vKC6+trbG9vK9m3SCTyXXpBbV1kx+v1IhAIoKKiAoODg2hpaeGnN1j7j4+PVT0Jh8Pw+/0KKN02NzerMXWYNZLcBZ4ZOY9RMf6bU8Uu/Le2tobq6mp0dXWpXc/rWiajDG9vb3F4eIiFhQU1HhsbUxt0aWkJj4+PYPYM8vClIq+jUPrRUPTT7Pn5GXRIYvVkEM6MdHFxoeqKUVuoSzo5OcH9/b3qG3/qGKafSz8MZr7WqB1M/9DQEFOodj3XnXRwcICzM/MTMJFIKD0WOSvZvgd4pPr7+03+9vb2sLq6auJxwGOai2wD4Kx49HixsHJeXV2pI5krUC7+pwBwI36WSr6IZKOxnjtC9FUyAIm86Uj0v042SwbAe0OQJz8Lgj7oq2QAcmRPxXBAHPxiCksFQhva0gd9/QFliFiu8Gk7TgAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;" name="password" data-gtm-form-interact-field-id="1">
+                    
+                    
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 di12">
+                      
+                      <p class="small">
+                        <a class="ancorpass" href="/password/reset/">
+                          ¿Olvidaste tu contraseña?
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+        
+                  
+        
+                  <div class="row">
+                    <div class="col-md-8 di13">
+                    <button type="submit" class="btn btn-success" id="login">
+                      <a href="./pages/inicio.html">Ingresar</a> 
+                    </button>
+                    </div>
+                  </div>
+ 
+                </form>
+              </div>
+            </div>
+        
+            <div class="panel panel-default foot">
+              <div class="panel-body">
+                <h2 class="cuenta" >¿No tenés cuenta?</h2>
+                <a href="/registro/?next=/authorize/%3Fclient_id%3D613410%26response_type%3Dcode%26scope%3Dopenid%2Bprofile%2Bemail%2Boptional%26redirect_uri%3Dhttps%3A//mi.argentina.gob.ar/_oauth/oidc%26state%3DeyJsb2dpblN0eWxlIjoicmVkaXJlY3QiLCJjcmVkZW50aWFsVG9rZW4iOiJncjV5c1RCeXpuaFpudjJzdyIsImlzQ29yZG92YSI6ZmFsc2UsInJlZGlyZWN0VXJsIjoiaHR0cHM6Ly9taS5hcmdlbnRpbmEuZ29iLmFyL2JpbGxldGVyYSJ9" class="btn btn-primary" role="button" tabindex="0">
+                  Creá tu cuenta
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        </main>
+      
+</body>
+</html>
